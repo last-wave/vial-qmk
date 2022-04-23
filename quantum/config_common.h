@@ -24,9 +24,9 @@
 #define COL2ROW 0
 #define ROW2COL 1
 
-#define AUTO_SHIFT_TIMEOUT 200
+#define AUTO_SHIFT_TIMEOUT 175
 #define DYNAMIC_KEYMAP_LAYER_COUNT 4
-#define VIAL_TAP_DANCE_ENTRIES 16
-#define TAPPING_TERM 250
+#define VIAL_TAP_DANCE_ENTRIES 24
+#define TAPPING_TERM 200
 
 #include "song_list.h"
