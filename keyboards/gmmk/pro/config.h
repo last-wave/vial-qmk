@@ -119,9 +119,6 @@
 #undef ENABLE_RGB_MATRIX_SOLID_SPLASH
 #undef ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-/* 1000Hz USB polling - it's the default on stock firmware */
-#define USB_POLLING_INTERVAL_MS 1
-
 /* Send up to 4 key press events per scan */
 #define QMK_KEYS_PER_SCAN 4
 
