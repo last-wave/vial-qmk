@@ -1,0 +1,15 @@
+# SRC += rgb.c
+
+VIA_ENABLE = yes
+VIAL_ENABLE = yes
+
+VIAL_INSECURE = yes
+VIAL_ENCODERS_ENABLE = yes
+VIALRGB_ENABLE = yes
+
+COMBO_ENABLE = no
+MOUSEKEY_ENABLE = no
+KEY_OVERRIDE_ENABLE = yes
+AUTO_SHIFT_ENABLE = yes
+TAP_DANCE_ENABLE = yes
+RGB_MATRIX_CUSTOM_USER = yes # looks for rgb_matrix_user.inc
