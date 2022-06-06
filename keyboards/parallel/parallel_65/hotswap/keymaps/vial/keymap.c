@@ -15,6 +15,10 @@
  */
 #include QMK_KEYBOARD_H
 
+#define ALT_F4 LALT(KC_F4)
+#define CTL_W  LCTL(KC_W)
+#define CA_DEL LCA(KC_DEL)
+
 enum layer_names {
     _L0,
     _L1,
@@ -31,10 +35,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LCTL, KC_LGUI, KC_LALT,                            KC_SPC,                             KC_RALT,          KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT
     ),
     [_L1] = LAYOUT_65_ansi_blocker(
-        KC_PWR,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,           KC_DEL,  LCA(KC_DELETE),
-        KC_TRNS, LALT(KC_F4), KC_UP, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR, KC_SLCK, KC_PAUS,      RESET,   KC_HOME,
+        KC_PWR,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,           KC_DEL,  CA_DEL,
+        KC_TRNS, ALT_F4,  CTL_W,   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCR, KC_SLCK, KC_PAUS,          RESET,   KC_HOME,
         KC_CAPS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_MPLY, KC_END,
-        KC_TRNS,          KC_VOLD, KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS, KC_VOLU, KC_TRNS,
+        KC_TRNS,          KC_VOLD, KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_VOLU, KC_TRNS,
         KC_TRNS, KC_TRNS, KC_MPRV,                            KC_MPLY,                            KC_MNXT,          KC_TRNS, KC_MPRV, KC_VOLD, KC_MNXT
     ),
     [_L2] = LAYOUT_65_ansi_blocker(
