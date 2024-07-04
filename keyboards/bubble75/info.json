@@ -4,7 +4,7 @@
   "productId": "0x5A4C",
   "matrix": { "rows": 6, "cols": 15 },
   "layouts": {
-    "LAYOUT_comet": {
+    "LAYOUT_wave": {
       "layout": [
         { "x":0, "y":0 },
         { "x":1.5, "y":0 },
